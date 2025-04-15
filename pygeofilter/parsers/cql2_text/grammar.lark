@@ -139,6 +139,7 @@ DATETIME: /[0-9]{4}-?[0-1][0-9]-?[0-3][0-9][T ][0-2][0-9]:?[0-5][0-9]:?[0-5][0-9
 ?interval: "INTERVAL" "(" instant_parameter "," instant_parameter ")"
 ?instant_parameter: "'" DATE "'"
                   | "'" DATETIME "'"
+                  | timestamp
                   | "'..'"
                   | attribute
                   | func
